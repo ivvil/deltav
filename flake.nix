@@ -41,9 +41,10 @@ in {
       url = "github:rafaelmardojai/firefox-gnome-theme";
       flake = false;
     };
-    emacs-config = {
-      url = "github:ivvil/Emacs_config";
-      flake = false;
+
+    emacs-overlay = {
+      url = "github:nix-community/emacs-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 }
