@@ -1,0 +1,38 @@
+{
+  pkgs,
+  config,
+  ...
+}: let
+  shellAliases = {
+    "db" = "distrobox";
+    "n" = "nano";
+    "em" = "emacs";
+    "sudo " = "sudo";
+    "sv" = "systemctl";
+    "del" = "gio trash";
+    "c" = "clear";
+  };
+in {
+  programs = {
+    zsh = {
+      inherit shellAliases;
+      enable = true;
+      ohMyZsh = {
+        enable = true;
+        plugins = ["git" "python" "man"];
+        theme = "lambda";
+      };
+      enableCompletion = true;
+      autosuggestion.enable = true;
+      syntaxHighlighting.enable = true;
+      initExtra = ''
+        SHELL=${pkgs.zsh}/bin/zsh '';
+    };
+
+    bash = {
+      inherit shellAliases;
+      enable = true;
+      initExtra = "SHELL=${pkgs.bash}";
+    };
+  };
+}

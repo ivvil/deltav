@@ -1,0 +1,50 @@
+{pkgs, ...}: {
+  home.packages = with pkgs;
+  with gnome; [
+    # gui
+    (mpv.override {scripts = [mpvScripts.mpris];})
+    libreoffice
+    # spotify
+    # spicetify-cli
+    caprine-bin
+    d-spy
+    # github-desktop
+    gimp
+    fragments
+    discord
+    vesktop
+    icon-library
+    dconf-editor
+    gnome-secrets
+    simple-scan
+
+    # langs
+    nodejs
+    yarn
+
+    # tools
+    steam-run # fhs envs
+    libnotify
+    killall
+    zip
+    unzip
+    glib
+    tor-browser
+    inkscape-with-extensions
+    zathura
+    coppwr
+    gnome-firmware
+    file
+
+    # fun
+    glow
+    slides
+    yabridge
+    yabridgectl
+    wine-staging
+    ascii-draw
+    ani-cli
+    lollypop
+    zed-editor
+  ];
+}
