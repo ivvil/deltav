@@ -1,6 +1,6 @@
-{ config, ...}: {
+{config, ...}: {
   time.timeZone = config.var.timeZone;
-  
+
   i18n.defaultLocale = config.var.defaultLocale;
   i18n.extraLocaleSettings = {
     LC_ADDRESS = config.var.extraLocale;
@@ -15,4 +15,9 @@
   };
 
   console.keyMap = config.var.keyboardLayout;
+
+  services.xserver.xkb = {
+    layout = config.var.keyboardLayout;
+    variant = "";
+  };
 }

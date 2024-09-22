@@ -35,6 +35,7 @@
     coppwr
     gnome-firmware
     file
+    wget
 
     # fun
     glow

@@ -150,4 +150,11 @@ with lib.hm.gvariant; {
       uris = ["qemu:///system"];
     };
   };
+
+  home.packages = with pkgs.gnomeExtensions; [
+    gnomeExtensions.pano
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.gsconnect
+    gnomeExtensions.night-theme-switcher
+  ];
 }

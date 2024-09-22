@@ -14,9 +14,13 @@
     };
     gc = {
       automatic = config.var.autoGarbageCollector;
-      persistent = true;
+      # persistent = true;
       dates = "weekly";
       options = "--delete-older-than 15d";
     };
   };
+
+  programs.nix-ld.enable = true;
+
+  services.pcscd.enable = true; #  NOTE Didn't knew were to put this
 }

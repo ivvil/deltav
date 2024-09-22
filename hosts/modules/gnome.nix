@@ -31,15 +31,18 @@
     };
   };
 
-  programs.dconf.profiles = {
-    gdm.databases = [
-      {
-        settings = {
-          "org/gnome/desktop/peripherals/touchpad" = {
-            tap-to-click = true;
+  programs.dconf = {
+    enable = true;
+    profiles = {
+      gdm.databases = [
+        {
+          settings = {
+            "org/gnome/desktop/peripherals/touchpad" = {
+              tap-to-click = true;
+            };
           };
-        };
-      }
-    ];
+        }
+      ];
+    };
   };
 }

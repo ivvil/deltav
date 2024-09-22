@@ -34,5 +34,10 @@ in {
       enable = true;
       initExtra = "SHELL=${pkgs.bash}";
     };
+
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
   };
 }
