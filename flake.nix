@@ -7,6 +7,7 @@ in {
     self,
     home-manager,
     nixpkgs,
+    sops-nix,
     ...
   }: {
     nixosConfigurations = {
@@ -18,6 +19,8 @@ in {
           {
             networking.HostName = "aceso";
           }
+          hosts/aceso/aceso.nix
+          sops-nix.nixosModules.sops
         ];
       };
     };
@@ -36,6 +39,8 @@ in {
     #   url = "github:hyprwm/hyprland-plugins";
     #   inputs.hyprland.follows = "hyprland";
     # };
+
+    sops-nix.url = "github:Mic92/sops-nix";
 
     firefox-gnome-theme = {
       url = "github:rafaelmardojai/firefox-gnome-theme";
