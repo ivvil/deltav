@@ -37,5 +37,6 @@
 
       firefox
     ];
+    stateVersion = "24.11";
   };
 }
