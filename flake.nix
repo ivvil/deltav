@@ -15,7 +15,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           {
-            networking.HostName = "aceso";
+            networking.hostName = "aceso";
           }
           hosts/aceso/aceso.nix
           sops-nix.nixosModules.sops
