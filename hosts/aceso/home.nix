@@ -14,7 +14,7 @@
     ../../home/programs/gaming.nix
     ../../home/programs/git.nix
     # ../../home/programs/hyprland.nix
-    # ../../home/programs/mpd.nix
+    ../../home/programs/mpd.nix
     ../../home/programs/obs.nix
     ../../home/programs/packages.nix
     ../../home/programs/sh.nix
@@ -27,7 +27,7 @@
 
     packages = with pkgs; [
       vesktop
-      mpv
+      # mpv
       vlc
 
       zip
