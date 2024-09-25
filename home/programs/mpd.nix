@@ -2,6 +2,7 @@
   services = {
     mpd = {
       enable = true;
+      musicDirectory = "$(self.xdg.userDirs.music)";
       extraConfig = ''
         audio_output {
             type "pipewire"
