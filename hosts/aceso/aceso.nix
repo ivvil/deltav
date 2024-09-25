@@ -1,5 +1,7 @@
 {config, ...}: {
   imports = [
+    ./hardware-configuration.nix
+    
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/flatpak.nix

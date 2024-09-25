@@ -1,6 +1,4 @@
-let
-  username = "ivvil";
-in {
+{
   description = "deltav, my new system config";
 
   outputs = inputs @ {

@@ -5,6 +5,8 @@
 }: let
   emacsPkg = inputs.emacs-overlay.packages.${pkgs.system}.emacs-pgtk;
 in {
+  nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
+  
   home = {
     sessionVariables = {
       EDITROR = "emacs";
