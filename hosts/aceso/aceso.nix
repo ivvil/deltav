@@ -19,7 +19,7 @@
     ../modules/steam.nix
     ../modules/sudo.nix
     ../modules/swap.nix
-    ../modules/user.nix
+    # ../modules/user.nix
     ../modules/variables-config.nix
     ../modules/video.nix
     ../modules/virtualization.nix

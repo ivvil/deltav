@@ -22,8 +22,8 @@
   ];
 
   home = {
-    inherit (config.var) username;
-    inherit (config.var) homeDirectory;
+    # inherit (config.var) username;
+    # inherit (config.var) homeDirectory;
 
     packages = with pkgs; [
       vesktop
