@@ -17,6 +17,7 @@
     ../modules/nvidia.nix
     ../modules/openssh.nix
     ../modules/pringting.nix
+    ../modules/sh.nix
     ../modules/steam.nix
     ../modules/sudo.nix
     ../modules/swap.nix
