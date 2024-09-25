@@ -125,7 +125,7 @@ with lib.hm.gvariant; {
         blur-my-shell.extensionUuid
         gsconnect.extensionUuid
         places-status-indicator.extensionUuid
-        # TODO Add night theme switcher
+        night-theme-switcher.extensionUuid
       ];
     };
 
@@ -152,9 +152,9 @@ with lib.hm.gvariant; {
   };
 
   home.packages = with pkgs.gnomeExtensions; [
-    gnomeExtensions.pano
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.gsconnect
-    gnomeExtensions.night-theme-switcher
+    pano
+    blur-my-shell
+    gsconnect
+    night-theme-switcher
   ];
 }
