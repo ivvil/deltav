@@ -17,7 +17,7 @@ in {
     zsh = {
       inherit shellAliases;
       enable = true;
-      ohMyZsh = {
+      oh-my-zsh = {
         enable = true;
         plugins = ["git" "python" "man"];
         theme = "lambda";

@@ -13,7 +13,7 @@
       '';
     };
 
-    mpd-discord.enable = true;
+    mpd-discord-rpc.enable = true;
     mpd-mpris.enable = true;
   };
 }
