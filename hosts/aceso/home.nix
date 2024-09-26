@@ -35,7 +35,7 @@
       file
       pandoc
 
-      firefox
+      # firefox
     ];
     stateVersion = "24.11";
   };
