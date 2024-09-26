@@ -21,6 +21,19 @@
           sops-nix.nixosModules.sops
         ];
       };
+
+      "castor" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {inherit inputs;};
+        modules = [
+          home-manager.nixosModules.home-manager
+          {
+            networking.hostName = "castor";
+          }
+          hosts/castor/castor.nix
+          sops-nix.nixosModules.sops
+        ];
+      };
     };
   };
 
