@@ -103,12 +103,12 @@ with lib.hm.gvariant; {
       name = "term";
     };
 
-    "org/gnome/settings-daemon/plugins/power" = {
-      idle-dim = false;
-      power-button-action = "interactive";
-      sleep-inactive-ac-type = "nothing";
-      sleep-inactive-battery-type = "nothing";
-    };
+    # "org/gnome/settings-daemon/plugins/power" = {
+    #   idle-dim = false;
+    #   power-button-action = "interactive";
+    #   sleep-inactive-ac-type = "nothing";
+    #   sleep-inactive-battery-type = "nothing";
+    # };
 
     "org/gnome/shell" = {
       favorite-apps = [
@@ -148,6 +148,10 @@ with lib.hm.gvariant; {
     "org/virt-manager/virt-manager/connections" = {
       autoconnect = ["qemu:///system"];
       uris = ["qemu:///system"];
+    };
+
+    "org/gnome/system" = {
+      location = true;
     };
   };
 
