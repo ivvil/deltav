@@ -7,10 +7,10 @@
       consoleMode = "auto";
     };
 
-    # plymouth.enable = true;
+    plymouth.enable = true;
     # tmp.cleanOnBoot = true;
     kernelPackages =
-      pkgs.linuxPackages_latest; # _zen, _hardened, _rt, _rt_latest, etc.
+      pkgs.linuxPackages_zen; # _zen, _hardened, _rt, _rt_latest, etc.
   };
 
   
