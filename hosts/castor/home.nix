@@ -22,12 +22,12 @@
   ];
 
   home = {
-    inherit (config.var) userName;
-    inherit (config.var) homeDirectory;
+    inherit (config.var) username;
+    # inherit (config.var) homeDirectory;
 
     packages = with pkgs; [
       vesktop
-      mpv
+      # mpv
       vlc
 
       zip
@@ -35,7 +35,8 @@
       file
       pandoc
 
-      firefox
+      # firefox
     ];
+    stateVersion = "24.11";
   };
 }

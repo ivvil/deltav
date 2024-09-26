@@ -1,5 +1,8 @@
 {config, ...}: {
   imports = [
+    ./hardware-configuration.nix
+    ./variables.nix
+    
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/flatpak.nix
@@ -14,6 +17,7 @@
     ../modules/nvidia.nix
     ../modules/openssh.nix
     ../modules/pringting.nix
+    ../modules/sh.nix
     ../modules/steam.nix
     ../modules/sudo.nix
     ../modules/swap.nix
@@ -26,7 +30,7 @@
     ./hardware-configuration.nix
   ];
 
-  home-manager.users."$(config.var.username)" = import ./home.nix;
+  home-manager.users.${config.var.username} = import ./home.nix;
 
   system.stateVersion = "24.05";
 }

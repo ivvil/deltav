@@ -26,6 +26,8 @@
     ../modules/video.nix
     ../modules/virtualization.nix
     ../modules/wayland.nix
+
+    ./hardware-configuration.nix
   ];
 
   home-manager.users.${config.var.username} = import ./home.nix;
