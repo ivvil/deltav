@@ -1,7 +1,7 @@
-{pkgs}: {
+{pkgs, ...}: {
   services.ratbagd.enable = true;
 
-  systemPkgs = with pkgs; [
+  environment.systemPackages = with pkgs; [
     piper
   ];
 }
