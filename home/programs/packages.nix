@@ -21,6 +21,7 @@
     # langs
     nodejs
     yarn
+    alejandra
 
     # tools
     steam-run # fhs envs
