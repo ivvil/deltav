@@ -14,7 +14,7 @@
     ../modules/locale.nix
     ../modules/networking.nix
     ../modules/nix.nix
-    ../modules/nvidia.nix
+    # ../modules/nvidia.nix
     ../modules/openssh.nix
     ../modules/pringting.nix
     ../modules/sh.nix
