@@ -10,6 +10,7 @@
     users.${config.var.username} = {
       isNormalUser = true;
       extraGroups = ["networkmanager" "wheel"];
+      description = "Iván Villagrasa";
       # group = "$(config.var.username)";
     };
   };
