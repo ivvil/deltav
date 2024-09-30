@@ -22,5 +22,6 @@
     rustfmt
     clippy
     dotnet-sdk_8
+    php
   ];
 }
