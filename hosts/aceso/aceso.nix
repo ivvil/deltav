@@ -2,6 +2,7 @@
   imports = [
     ./hardware-configuration.nix
     ./variables.nix
+    ./disks.nix
     
     ../modules/audio.nix
     ../modules/boot.nix
