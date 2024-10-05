@@ -31,7 +31,10 @@
     ./hardware-configuration.nix
   ];
 
-  home-manager.users.${config.var.username} = import ./home.nix;
-
+  home-manager.users = {
+    ${config.var.username} = import ./home.nix;
+    "meperez" = import ./meperez.nix;
+  };
+    
   system.stateVersion = "24.05";
 }
