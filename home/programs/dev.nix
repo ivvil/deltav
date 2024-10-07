@@ -23,5 +23,6 @@
     clippy
     dotnet-sdk_8
     php
+    jetbrains.phpstorm
   ];
 }
