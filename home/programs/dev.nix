@@ -24,5 +24,8 @@
     dotnet-sdk_8
     php
     jetbrains.phpstorm
+    jetbrains.webstorm
+    blueprint-compiler
+    gnome-builder
   ];
 }
