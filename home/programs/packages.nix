@@ -48,5 +48,7 @@
     ani-cli
     lollypop
     zed-editor
+    vmware-horizon-client
+    mission-center
   ];
 }
