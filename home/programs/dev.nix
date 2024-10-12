@@ -27,5 +27,6 @@
     jetbrains.webstorm
     blueprint-compiler
     gnome-builder
+    cambalache
   ];
 }
