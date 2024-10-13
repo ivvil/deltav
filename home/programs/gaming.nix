@@ -1,5 +1,7 @@
-{inputs, pkgs, lib, ...}:
-{
+{inputs, pkgs, ...}:
+let
+  suyu = inputs.suyu.packages.${pkgs.system}.suyu;
+in {
   home.packages = with pkgs; [
     steam
     mangohud
@@ -8,5 +10,6 @@
     prismlauncher
     bottles
     lutris
+    suyu
   ];
 }
