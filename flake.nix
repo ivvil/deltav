@@ -6,6 +6,7 @@
     home-manager,
     nixpkgs,
     sops-nix,
+    nixos-hardware,
     ...
   }: {
     nixosConfigurations = {
@@ -32,6 +33,20 @@
           }
           hosts/castor/castor.nix
           sops-nix.nixosModules.sops
+        ];
+      };
+
+      "philoctetes" = nixpkgs.lib.nixosSystem {
+        system = "aarch64-linux";
+        specialArgs = {inherit inputs;};
+        modules = [
+          home-manager.nixosModules.home-manager
+          {
+            networking.hostname = "philoctetes";
+          }
+          hosts/philoctetes/philoctetes.nix
+          sops-nix.nixosModules.sops
+          nixos-hardware.nixosModules.raspberry-pi-4
         ];
       };
     };
@@ -71,8 +86,12 @@
     };
 
     suyu = {
-      url = "git+https://git.suyu.dev/suyu/nix-flake";
+      url = "github:Noodlez1232/suyu-flake";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware/master";
     };
   };
 }
