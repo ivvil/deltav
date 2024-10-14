@@ -42,7 +42,7 @@
         modules = [
           home-manager.nixosModules.home-manager
           {
-            networking.hostname = "philoctetes";
+            networking.hostName = "philoctetes";
           }
           hosts/philoctetes/philoctetes.nix
           sops-nix.nixosModules.sops
