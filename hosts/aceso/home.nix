@@ -21,6 +21,8 @@
     ../../home/programs/spotify.nix
   ];
 
+  deltav.home.emacs.enable = true;
+  
   home = {
     inherit (config.var) username;
     # inherit (config.var) homeDirectory;
