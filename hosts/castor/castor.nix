@@ -12,6 +12,7 @@
     ../modules/gnome.nix
     ../modules/graphics.nix
     ../modules/home-manager.nix
+    ../modules/httpd.nix
     ../modules/locale.nix
     ../modules/networking.nix
     ../modules/nix.nix
