@@ -32,6 +32,11 @@
     ./hardware-configuration.nix
   ];
 
+  deltav.nixos.swap = {
+    enable = true;
+    size = 16 * 1024;
+  };
+
   home-manager.users = {
     ${config.var.username} = import ./home.nix;
     "meperez" = import ./meperez.nix;

@@ -6,7 +6,7 @@
     ../modules/extlinux-boot.nix 
     ../modules/doc.nix
     # ../modules/flatpak.nix
-    ../modules/fonts.nix
+    # ../modules/fonts.nix
     ../modules/fs.nix
     # ../modules/gnome.nix
     # ../modules/graphics.nix
@@ -31,6 +31,10 @@
 
     ./hardware-configuration.nix
   ];
+
+  deltav.nixos.swap = {
+    enable = true;
+  };
 
   home-manager.users.${config.var.username} = import ./home.nix;
 
