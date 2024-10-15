@@ -29,13 +29,13 @@
     # ../modules/wayland.nix
     ../modules/wifi.nix
 
-    ./hardware-configuration.nix
+    # ./hardware-configuration.nix
   ];
 
   deltav.nixos.swap = {
     enable = true;
   };
-
+  
   home-manager.users.${config.var.username} = import ./home.nix;
 
   system.stateVersion = "24.05";

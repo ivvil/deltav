@@ -8,7 +8,7 @@
     sops-nix,
     nixos-hardware,
     ...
-  }: {
+  }: rec {
     nixosConfigurations = {
       "aceso" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -40,9 +40,13 @@
         system = "aarch64-linux";
         specialArgs = {inherit inputs;};
         modules = [
+          "${nixpkgs}/nixos/modules/installer/sd-card/sd-image-raspberrypi.nix"
           home-manager.nixosModules.home-manager
           {
             networking.hostName = "philoctetes";
+            nixpkgs.config.allowUnsupportedSystem = true;
+            nixpkgs.hostPlatform.system = "aarch64-linux";
+            nixpkgs.buildPlatform.system = "x86_64-linux";
           }
           hosts/philoctetes/philoctetes.nix
           sops-nix.nixosModules.sops
@@ -50,6 +54,8 @@
         ];
       };
     };
+
+    images."philoctetes" = nixosConfigurations."philoctetes".config.system.build.sdImage;
   };
 
   inputs = {

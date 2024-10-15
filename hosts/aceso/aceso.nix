@@ -35,5 +35,7 @@
 
   home-manager.users.${config.var.username} = import ./home.nix;
 
+  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+
   system.stateVersion = "24.05";
 }

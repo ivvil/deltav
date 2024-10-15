@@ -44,5 +44,8 @@
     };
   };
 
-  home.packages = with pkgs; [nyxt ladybird];
+  home.packages = with pkgs; [
+    nyxt
+    # ladybird
+  ];
 }

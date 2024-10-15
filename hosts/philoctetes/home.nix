@@ -32,7 +32,7 @@
 
     packages = with pkgs; [
       # vesktop
-      # mpv
+      mpv
       # vlc
 
       zip
