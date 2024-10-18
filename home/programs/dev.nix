@@ -29,5 +29,7 @@
     gnome-builder
     cambalache
     clang-tools    
+    deno
+    typescript
   ];
 }

@@ -11,5 +11,6 @@ in {
     bottles
     lutris
     suyu
+    fusee-nano
   ];
 }

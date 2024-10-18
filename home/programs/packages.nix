@@ -20,7 +20,7 @@
 
     # langs
     nodejs
-    yarn
+    # yarn
     alejandra
 
     # tools
