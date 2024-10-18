@@ -28,5 +28,6 @@
     blueprint-compiler
     gnome-builder
     cambalache
+    clang-tools    
   ];
 }
