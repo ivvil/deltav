@@ -19,6 +19,7 @@
     ../../home/programs/packages.nix
     ../../home/programs/sh.nix
     ../../home/programs/spotify.nix
+    ../../home/programs/video.nix
   ];
 
   deltav.home.emacs.enable = true;

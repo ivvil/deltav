@@ -2,7 +2,11 @@
   inputs,
   pkgs,
   ...
-}: {
+}:
+let
+  zen-browser = inputs.zen-browser.packages."${pkgs.system}".specific;
+in
+{
   home = {
     sessionVariables.BROWSER = "firefox";
 
@@ -47,5 +51,6 @@
   home.packages = with pkgs; [
     nyxt
     # ladybird
+    zen-browser
   ];
 }
