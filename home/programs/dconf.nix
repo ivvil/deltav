@@ -126,6 +126,7 @@ with lib.hm.gvariant; {
         gsconnect.extensionUuid
         places-status-indicator.extensionUuid
         night-theme-switcher.extensionUuid
+        gsconnect.extensionUuid
       ];
     };
 
@@ -160,5 +161,6 @@ with lib.hm.gvariant; {
     blur-my-shell
     gsconnect
     night-theme-switcher
+    gsconnect
   ];
 }
