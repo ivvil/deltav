@@ -23,7 +23,6 @@
       dejavu_fonts
       iosevka-bin
       noto-fonts
-      noto-fonts-cjk
       noto-fonts-emoji
       jetbrains-mono
       nerdfonts
