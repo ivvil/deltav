@@ -7,6 +7,8 @@
     nixpkgs,
     sops-nix,
     nixos-hardware,
+    nix-direnv,
+    nix-ld,
     ...
   }: rec {
     nixosConfigurations = {
@@ -15,8 +17,10 @@
         specialArgs = {inherit inputs;};
         modules = [
           home-manager.nixosModules.home-manager
+          nix-ld.nixosModules.nix-ld
           {
             networking.hostName = "aceso";
+            programs.nix-ld.dev.enable = true;
           }
           hosts/aceso/aceso.nix
           sops-nix.nixosModules.sops
@@ -28,8 +32,10 @@
         specialArgs = {inherit inputs;};
         modules = [
           home-manager.nixosModules.home-manager
+          nix-ld.nixosModules.nix-ld
           {
             networking.hostName = "castor";
+            programs.nix-ld.dev.enable = true;
           }
           hosts/castor/castor.nix
           sops-nix.nixosModules.sops
@@ -67,6 +73,11 @@
 
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nix-ld = {
+      url = "github:Mic92/nix-ld";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

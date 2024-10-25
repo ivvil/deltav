@@ -10,6 +10,7 @@ in {
     bottles
     lutris
     suyu
-    fusee-nano    
+    fusee-nano
+    heroic-unwrapped
   ];
 }
