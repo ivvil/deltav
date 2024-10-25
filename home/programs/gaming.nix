@@ -6,11 +6,10 @@ in {
     steam
     mangohud
     r2modman
-    heroic
     prismlauncher
     bottles
     lutris
     suyu
-    fusee-nano
+    fusee-nano    
   ];
 }

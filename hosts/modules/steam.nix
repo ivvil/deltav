@@ -12,6 +12,10 @@
     # gamescope.enable = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    heroic
+  ];
+
   nixpkgs.overlays = [
     (final: prev: {
       steam = prev.steam.override ({extraPkgs ? pkgs': [], ...}: {
