@@ -36,7 +36,7 @@ in {
       };
 
       packages = with pkgs; [
-        nil
+        nixd
         (aspellWithDicts (dicts: with dicts; [en en-computers en-science es]))
         ghostscript
         mupdf

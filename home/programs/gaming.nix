@@ -11,6 +11,7 @@ in {
     lutris
     suyu
     fusee-nano
-    heroic-unwrapped
+    heroic
+    pcsx2
   ];
 }

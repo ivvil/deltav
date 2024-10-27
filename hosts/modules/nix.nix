@@ -1,4 +1,4 @@
-{ config, ... }: {
+{ inputs, config, ... }: {
   nixpkgs.config.allowUnfree = true;
   nix = {
     extraOptions = ''
@@ -18,6 +18,8 @@
       dates = "weekly";
       options = "--delete-older-than 15d";
     };
+
+    nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
   };
 
   programs.nix-ld.enable = true;
