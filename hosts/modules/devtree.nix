@@ -1,0 +1,3 @@
+{
+  hardware.deviceTree.enable = true;
+}

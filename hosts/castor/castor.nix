@@ -5,6 +5,7 @@
     
     ../modules/audio.nix
     ../modules/boot.nix
+    ../modules/devtree.nix
     ../modules/doc.nix
     ../modules/flatpak.nix
     ../modules/fonts.nix
