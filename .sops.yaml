@@ -4,8 +4,10 @@
 # for a more complex example.
 keys:
   - &castor age12vfdwfnz0ufmhzavpjl4x0jzkly3z3jf9df8v46wn5j8ucc4hvjqmgjjae
+  - &aceso age14uh5ys33fjxsksthwy6wss300q5ar82t8knwhzn922u2g2zqtvmsr00mrt
 creation_rules:
   - path_regex: secrets/secrets.yaml$
     key_groups:
       - age:
           - *castor
+          - *aceso
