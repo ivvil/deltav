@@ -18,6 +18,7 @@
     ../../home/programs/obs.nix
     ../../home/programs/packages.nix
     ../../home/programs/sh.nix
+    ../../home/programs/sops.nix
     ../../home/programs/spotify.nix
     ../../home/programs/video.nix
   ];

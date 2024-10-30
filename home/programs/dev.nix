@@ -31,5 +31,6 @@
     clang-tools    
     deno
     typescript
+    typescript-language-server
   ];
 }
