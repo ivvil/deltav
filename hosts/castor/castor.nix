@@ -2,7 +2,7 @@
   imports = [
     ./hardware-configuration.nix
     ./variables.nix
-    
+
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/devtree.nix
@@ -34,15 +34,19 @@
     ./hardware-configuration.nix
   ];
 
-  deltav.nixos.swap = {
-    enable = true;
-    size = 16 * 1024;
+  deltav.nixos = {
+    swap = {
+      enable = true;
+      size = 16 * 1024;
+    };
+    ollama.enable = true;
+    nix.garbageCollection = true;
   };
 
   home-manager.users = {
     ${config.var.username} = import ./home.nix;
     "meperez" = import ./meperez.nix;
   };
-  
+
   system.stateVersion = "24.05";
 }

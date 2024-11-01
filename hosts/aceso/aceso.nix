@@ -1,9 +1,8 @@
 {config, ...}: {
   imports = [
-    ./hardware-configuration.nix
     ./variables.nix
     ./disks.nix
-    
+
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/doc.nix
@@ -37,7 +36,16 @@
 
   home-manager.users.${config.var.username} = import ./home.nix;
 
-  boot.binfmt.emulatedSystems = [ "aarch64-linux" ];
+  boot.binfmt.emulatedSystems = ["aarch64-linux"];
+
+  deltav.nixos = {
+    swap.enable = false;
+    ollama = {
+      enable = true;
+      acceleration = "cuda";
+    };
+    nix.garbageCollection = true;
+  };
 
   system.stateVersion = "24.05";
 }

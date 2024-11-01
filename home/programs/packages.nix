@@ -6,7 +6,7 @@
     libreoffice
     # spotify
     # spicetify-cli
-    caprine-bin
+    # caprine-bin
     d-spy
     # github-desktop
     gimp
@@ -37,6 +37,7 @@
     gnome-firmware
     file
     wget
+    ffmpeg
 
     # fun
     glow
@@ -50,5 +51,8 @@
     zed-editor
     vmware-horizon-client
     mission-center
+    nvtopPackages.full
   ];
 }
+
+
