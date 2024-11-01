@@ -18,6 +18,7 @@
     ../modules/networking.nix
     ../modules/nix.nix
     # ../modules/nvidia.nix
+    ../modules/ollama.nix
     ../modules/openssh.nix
     ../modules/pringting.nix
     ../modules/sh.nix
@@ -42,6 +43,6 @@
     ${config.var.username} = import ./home.nix;
     "meperez" = import ./meperez.nix;
   };
-    
+  
   system.stateVersion = "24.05";
 }

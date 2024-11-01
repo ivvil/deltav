@@ -32,6 +32,5 @@
     deno
     typescript
     typescript-language-server
-    ollama
   ];
 }

@@ -17,6 +17,7 @@
     ../modules/networking.nix
     ../modules/nix.nix
     ../modules/nvidia.nix
+    ../modules/ollama.nix
     ../modules/openssh.nix
     ../modules/peripherals.nix
     ../modules/pringting.nix
