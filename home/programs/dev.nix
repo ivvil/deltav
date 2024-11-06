@@ -11,7 +11,7 @@
     scons
     marksman
     texlive.combined.scheme-full
-    # python311Packages.pygments
+    python312Packages.pygments
     vscode
     jdk
     synology-drive-client
