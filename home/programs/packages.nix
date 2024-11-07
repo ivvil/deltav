@@ -37,7 +37,7 @@
     gnome-firmware
     file
     wget
-    ffmpeg
+    ffmpeg-full
 
     # fun
     glow
