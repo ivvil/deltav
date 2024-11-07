@@ -42,6 +42,8 @@ in {
 
     programs.nix-ld.enable = true;
 
+    programs.nh.enable = true;
+
     services.pcscd.enable = true; #  NOTE Didn't knew were to put this
   };
 }
