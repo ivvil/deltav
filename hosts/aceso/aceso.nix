@@ -3,6 +3,7 @@
     ./variables.nix
     ./disks.nix
 
+    ../modules/amd.nix
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/doc.nix
@@ -15,7 +16,7 @@
     ../modules/locale.nix
     ../modules/networking.nix
     ../modules/nix.nix
-    ../modules/nvidia.nix
+    # ../modules/nvidia.nix
     ../modules/ollama.nix
     ../modules/openssh.nix
     ../modules/peripherals.nix
