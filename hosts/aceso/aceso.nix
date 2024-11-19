@@ -43,9 +43,12 @@
     swap.enable = false;
     ollama = {
       enable = true;
-      acceleration = "cuda";
+      acceleration = "rocm";
     };
-    nix.garbageCollection = true;
+    nix = {
+      garbageCollection = true;
+      rocmSupport = true;
+    };
   };
 
   system.stateVersion = "24.05";

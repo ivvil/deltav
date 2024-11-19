@@ -8,6 +8,7 @@
 
     ../../home/programs/blackbox.nix
     ../../home/programs/browser.nix
+    ../../home/programs/cursor.nix
     ../../home/programs/dconf.nix
     ../../home/programs/dev.nix
     ../../home/programs/emacs.nix

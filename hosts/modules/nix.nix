@@ -9,6 +9,7 @@ with lib; let
 in {
   options.deltav.nixos.nix = {
     cudaSupport = mkEnableOption "Cuda support";
+    rocmSupport = mkEnableOption "Rocm support";
     garbageCollection = mkEnableOption "Automatic garbage collection";
   };
 
@@ -16,6 +17,7 @@ in {
     nixpkgs.config = {
       allowUnfree = true;
       cudaSupport = cfg.cudaSupport;
+      rocmSupport = cfg.rocmSupport;
     };
     nix = {
       extraOptions = ''
@@ -24,7 +26,10 @@ in {
       settings = {
         auto-optimise-store = true;
         experimental-features = ["nix-command" "flakes"];
-        substituters = ["https://hyprland.cachix.org" "https://cuda-maintainers.cachix.org"];
+        substituters = [
+          "https://hyprland.cachix.org"
+          "https://cuda-maintainers.cachix.org"
+        ];
         trusted-public-keys = [
           "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
           "cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="
