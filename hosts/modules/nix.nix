@@ -2,6 +2,7 @@
   inputs,
   config,
   lib,
+  pkgs,
   ...
 }:
 with lib; let
@@ -50,5 +51,11 @@ in {
     programs.nh.enable = true;
 
     services.pcscd.enable = true; #  NOTE Didn't knew were to put this
+
+    # Tell p11-kit to load/proxy opensc-pkcs11.so, providing all available slots
+    # (PIN1 for authentication/decryption, PIN2 for signing).
+    environment.etc."pkcs11/modules/opensc-pkcs11".text = ''
+      module: ${pkgs.opensc}/lib/opensc-pkcs11.so
+    '';
   };
 }

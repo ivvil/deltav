@@ -2,15 +2,12 @@
   inputs,
   pkgs,
   ...
-}:
-let
+}: let
   zen-browser = inputs.zen-browser.packages."${pkgs.system}".specific;
-in
-{
+in {
   home = {
     sessionVariables.BROWSER = "firefox";
     file."firefox-gnome-theme" = {
-
       target = ".mozilla/firefox/default/chrome/firefox-gnome-theme";
       source = inputs.firefox-gnome-theme;
     };
@@ -20,6 +17,8 @@ in
     firefox = {
       enable = true;
       package = pkgs.firefox-bin;
+      nativeMessagingHosts = [pkgs.web-eid-app];
+      policies.SecurityDevices.p11-kit-proxy = "${pkgs.p11-kit}/lib/p11-kit-proxy.so";
       profiles.default = {
         name = "Default";
         settings = {
