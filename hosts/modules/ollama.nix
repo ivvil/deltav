@@ -22,13 +22,17 @@ in {
       );
       default = null;
     };
+    ui = mkEnableOption "Enable web ui";
   };
 
   config = mkIf cfg.enable {
-    services.ollama = {
-      enable = true;
-      loadModels = cfg.models;
-      acceleration = cfg.acceleration;
+    services = {
+      ollama = {
+        enable = true;
+        loadModels = cfg.models;
+        acceleration = cfg.acceleration;
+      };
+      nextjs-ollama-llm-ui.enable = cfg.ui;
     };
   };
 }

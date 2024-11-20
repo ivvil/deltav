@@ -21,7 +21,10 @@
     ../../home/programs/spotify.nix
   ];
 
-  deltav.home.emacs.enable = true;
+  deltav.home.emacs = {
+    enable = true;
+    defaultEditor = true;
+  };
 
   home = {
     inherit (config.var) username;

@@ -52,6 +52,7 @@
     vmware-horizon-client
     mission-center
     nvtopPackages.full
+    bsdgames
   ];
 }
 

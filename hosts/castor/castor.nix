@@ -39,7 +39,10 @@
       enable = true;
       size = 16 * 1024;
     };
-    ollama.enable = true;
+    ollama = {
+      enable = true;
+      ui = true;
+    };
     nix.garbageCollection = true;
   };
 

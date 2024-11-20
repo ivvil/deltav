@@ -18,11 +18,7 @@ in {
       default = emacsPkg;
       description = "Emacs package to use";
     };
-    default = mkOption {
-      type = types.bool;
-      default = true;
-      description = "whether to set emacs as the default editor";
-    };
+    defaultEditor = mkEnableOption "Whether to set emacs as the default editor";
     # extraPkgs = lib.mkOption {
     #   type =
     # };
@@ -30,7 +26,7 @@ in {
 
   config = mkIf cfg.enable {
     home = {
-      sessionVariables = mkIf cfg.default {
+      sessionVariables = mkIf cfg.defaultEditor {
         EDITROR = "emacs";
         VISUAL = "emacs";
       };

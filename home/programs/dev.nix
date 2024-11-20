@@ -33,5 +33,6 @@
     typescript
     typescript-language-server
     semgrep
+    uv
   ];
 }
