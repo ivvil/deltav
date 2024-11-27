@@ -12,6 +12,7 @@ in {
       type = types.listOf types.str;
       default = ["mistral-small"];
     };
+    
     acceleration = mkOption {
       type = types.nullOr (
         types.enum [
@@ -22,6 +23,12 @@ in {
       );
       default = null;
     };
+
+    gfxOverride = mkOption {
+      type = types.nullOr types.str;
+      default = null;
+    };
+    
     ui = mkEnableOption "Enable web ui";
   };
 
@@ -31,6 +38,7 @@ in {
         enable = true;
         loadModels = cfg.models;
         acceleration = cfg.acceleration;
+        rocmOverrideGfx = cfg.gfxOverride;
       };
       nextjs-ollama-llm-ui.enable = cfg.ui;
     };

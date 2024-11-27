@@ -44,6 +44,8 @@
     ollama = {
       enable = true;
       acceleration = "rocm";
+      ui = true;
+      gfxOverride = "11.0.1";
     };
     nix = {
       garbageCollection = true;
