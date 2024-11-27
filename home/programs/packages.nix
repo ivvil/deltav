@@ -1,6 +1,5 @@
 {pkgs, ...}: {
-  home.packages = with pkgs;
-  with gnome; [
+  home.packages = with pkgs; [
     # gui
     (mpv.override {scripts = [mpvScripts.mpris];})
     libreoffice
@@ -53,5 +52,6 @@
     mission-center
     nvtopPackages.full
     bsdgames
+    imagemagick
   ];
 }

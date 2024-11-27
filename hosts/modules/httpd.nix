@@ -1,7 +1,7 @@
 {
   # Httpd
-  services.httpd = {
+  services.nginx = {
     enable = true;
-    virtualHosts."localhost".documentRoot = "/var/www/html";
+    virtualHosts."localhost".root = "/var/www/html";
   };
 }
