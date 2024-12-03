@@ -2,7 +2,7 @@
   virtualisation = {
     virtualbox.host = {
       enable = true;
-      # enableExtensionPack = true;
+      enableExtensionPack = true;
     };
 
     libvirtd.enable = true;
@@ -19,6 +19,8 @@
       defaultNetwork.settings.dns_enabled = true;
     };
   };
+
+  programs.virt-manager.enable = true;
 
   environment.systemPackages = with pkgs; [
     podman-tui # status of containers in the terminal

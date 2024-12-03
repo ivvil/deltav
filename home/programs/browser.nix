@@ -29,7 +29,7 @@ in {
           "gnomeTheme.hideSingleTab" = true;
           "gnomeTheme.bookmarksToolbarUnderTabs" = true;
           "gnomeTheme.normalWidthTabs" = false;
-          "gnomeTheme.tabsAsHeaderbar" = false;
+          # "gnomeTheme.tabsAsHeaderbar" = false;
         };
         userChrome = ''
           @import "firefox-gnome-theme/userChrome.css";
