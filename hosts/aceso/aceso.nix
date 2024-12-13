@@ -7,6 +7,7 @@
     ./disks.nix
 
     ../modules/amd.nix
+    ../modules/appimage.nix
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/doc.nix
