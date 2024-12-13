@@ -33,6 +33,7 @@
     ../modules/variables-config.nix
     ../modules/video.nix
     ../modules/virtualization.nix
+    ../modules/vr.nix
     ../modules/wayland.nix
 
     ./hardware-configuration.nix
