@@ -7,7 +7,8 @@
     direnv
     ccls
     sbcl
-    godot_4
+    godot_4-mono
+    godot_4-export-templates
     scons
     marksman
     texlive.combined.scheme-full
@@ -34,5 +35,6 @@
     typescript-language-server
     semgrep
     uv
+    android-studio
   ];
 }
