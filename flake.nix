@@ -108,5 +108,10 @@
     nixos-hardware = {
       url = "github:NixOS/nixos-hardware/master";
     };
+
+    telescope = {
+      url = "github:StardustXR/telescope";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 }

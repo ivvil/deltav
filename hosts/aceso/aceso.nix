@@ -6,6 +6,7 @@
     ./variables.nix
     ./disks.nix
 
+    ../modules/adb.nix
     ../modules/amd.nix
     ../modules/appimage.nix
     ../modules/audio.nix
