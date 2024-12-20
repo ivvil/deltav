@@ -6,6 +6,7 @@
     };
 
     libvirtd.enable = true;
+    spiceUSBRedirection.enable = true;
 
     containers.enable = true;
 

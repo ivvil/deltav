@@ -51,5 +51,11 @@
     "meperez" = import ./meperez.nix;
   };
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-core-combined"
+    "dotnet-sdk-6.0.428"
+    "dotnet-sdk-wrapped-6.0.428"
+  ];
+
   system.stateVersion = "24.05";
 }
