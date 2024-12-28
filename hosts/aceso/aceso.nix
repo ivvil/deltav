@@ -31,6 +31,7 @@
     ../modules/sudo.nix
     ../modules/swap.nix
     # ../modules/syncthing.nix
+    ../modules/udev.nix
     ../modules/user.nix
     ../modules/variables-config.nix
     ../modules/video.nix

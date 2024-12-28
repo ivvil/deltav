@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  zen-browser = inputs.zen-browser.packages."${pkgs.system}".specific;
+  zen-browser = inputs.zen-browser.packages."${pkgs.system}".default;
 in {
   home = {
     sessionVariables.BROWSER = "firefox";

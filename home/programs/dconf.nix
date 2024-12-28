@@ -44,7 +44,6 @@ with lib.hm.gvariant; {
     # };
 
     "org/gnome/desktop/wm/keybindings" = {
-      close = ["<Alt>q"];
       move-to-workspace-left = ["<Shift><Super>a"];
       move-to-workspace-right = ["<Shift><Super>d"];
       switch-to-workspace-left = ["<Super>a"];
