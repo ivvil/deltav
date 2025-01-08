@@ -7,9 +7,8 @@ in {
     mangohud
     r2modman
     prismlauncher
-    bottles
     lutris
-    suyu
+    # suyu
     fusee-nano
     heroic
     pcsx2

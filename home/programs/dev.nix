@@ -36,5 +36,6 @@
     semgrep
     uv
     android-studio
+    autotools-language-server
   ];
 }

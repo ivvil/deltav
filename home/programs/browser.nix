@@ -48,7 +48,7 @@ in {
   };
 
   home.packages = with pkgs; [
-    nyxt
+    # nyxt
     # ladybird
     zen-browser
   ];

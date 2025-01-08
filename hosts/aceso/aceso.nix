@@ -38,6 +38,7 @@
     ../modules/virtualization.nix
     ../modules/vr.nix
     ../modules/wayland.nix
+    ../modules/xfce.nix
 
     ./hardware-configuration.nix
   ];

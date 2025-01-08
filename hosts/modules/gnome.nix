@@ -13,7 +13,7 @@
     ];
 
     systemPackages = with pkgs; [
-      gnome-extension-manager
+      # gnome-extension-manager
       nautilus-open-any-terminal
       nautilus-python
       wl-clipboard
