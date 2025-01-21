@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
     ./variables.nix
@@ -50,6 +54,11 @@
     ${config.var.username} = import ./home.nix;
     "meperez" = import ./meperez.nix;
   };
+
+  environment.systemPackages = with pkgs; [
+    gcc
+    clang
+  ];
 
   nixpkgs.config.permittedInsecurePackages = [
     "dotnet-core-combined"

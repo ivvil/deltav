@@ -16,7 +16,7 @@
     vscode
     jdk
     synology-drive-client
-    gcc
+    # gcc
     cargo
     rustc
     rust-analyzer
@@ -29,6 +29,8 @@
     blueprint-compiler
     gnome-builder
     cambalache
+    # clang
+    libcxx
     clang-tools    
     deno
     typescript
@@ -37,5 +39,6 @@
     uv
     android-studio
     autotools-language-server
+    dbeaver-bin
   ];
 }
