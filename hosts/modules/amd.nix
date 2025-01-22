@@ -28,8 +28,8 @@
   environment.systemPackages = with pkgs; [
     gpu-viewer
     rocmPackages.clr
-    rocmPackages.clang-ocl
-    rocmPackages.llvm.llvm
+    # rocmPackages.clang-ocl
+    # rocmPackages.llvm.llvm
   ];
 
   services.xserver = {
