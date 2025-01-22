@@ -40,5 +40,6 @@
     android-studio
     autotools-language-server
     dbeaver-bin
+    inetutils
   ];
 }
