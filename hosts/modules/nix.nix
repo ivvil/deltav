@@ -30,15 +30,15 @@ in {
         substituters = [
           "https://hyprland.cachix.org"
           "https://cuda-maintainers.cachix.org"
-          "https://ivvil.cachix.org"
+          # "https://ivvil.cachix.org"
         ];
         trusted-public-keys = [
           "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
           "cuda-maintainers.cachix.org-1:0dq3bujKpuEPMCX6U4WylrUDZ9JyUG0VpVZa7CNfq5E="
-          "ivvil.cachix.org-1:/EPGeOn9YL2UyuuNYhVrRe+EzSZsV+KhbXeJVG4ngJw="
+          # "ivvil.cachix.org-1:/EPGeOn9YL2UyuuNYhVrRe+EzSZsV+KhbXeJVG4ngJw="
         ];
-        secret-key-files = /etc/nix/key.private;
-        post-build-hook = ../../scripts/upload-to-cache.sh;
+        # secret-key-files = /etc/nix/key.private;
+        # post-build-hook = ../../scripts/upload-to-cache.sh;
       };
       gc = {
         automatic = cfg.garbageCollection;
