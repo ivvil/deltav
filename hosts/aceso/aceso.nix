@@ -11,6 +11,7 @@
     ../modules/appimage.nix
     ../modules/audio.nix
     ../modules/boot.nix
+    ../modules/btrfs.nix
     ../modules/doc.nix
     ../modules/flatpak.nix
     ../modules/fonts.nix
