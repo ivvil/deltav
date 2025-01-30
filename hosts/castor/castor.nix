@@ -26,6 +26,7 @@
     ../modules/ollama.nix
     ../modules/openssh.nix
     ../modules/pringting.nix
+    ../modules/secureboot.nix
     ../modules/sh.nix
     ../modules/steam.nix
     ../modules/sudo.nix

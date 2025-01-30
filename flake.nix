@@ -7,6 +7,7 @@
     nixpkgs,
     sops-nix,
     nixos-hardware,
+    lanzaboote,
     ...
   }: rec {
     nixosConfigurations = {
@@ -33,6 +34,7 @@
           }
           hosts/castor/castor.nix
           sops-nix.nixosModules.sops
+          lanzaboote.nixosModules.lanzaboote
         ];
       };
 
@@ -111,6 +113,11 @@
 
     telescope = {
       url = "github:StardustXR/telescope";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.4.2";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

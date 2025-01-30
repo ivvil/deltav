@@ -41,5 +41,6 @@
     autotools-language-server
     dbeaver-bin
     inetutils
+    wl-clipboard-x11
   ];
 }
