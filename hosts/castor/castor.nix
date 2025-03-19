@@ -31,6 +31,7 @@
     ../modules/steam.nix
     ../modules/sudo.nix
     ../modules/swap.nix
+    ../modules/syncthing.nix
     ../modules/user.nix
     ../modules/variables-config.nix
     ../modules/video.nix

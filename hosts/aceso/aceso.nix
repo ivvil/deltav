@@ -30,8 +30,9 @@
     ../modules/sh.nix
     ../modules/steam.nix
     ../modules/sudo.nix
+    ../modules/sunshine.nix
     ../modules/swap.nix
-    # ../modules/syncthing.nix
+    ../modules/syncthing.nix
     ../modules/udev.nix
     ../modules/user.nix
     ../modules/variables-config.nix
@@ -66,6 +67,7 @@
     "dotnet-core-combined"
     "dotnet-sdk-6.0.428"
     "dotnet-sdk-wrapped-6.0.428"
+    "electron-32.3.3"
   ];
 
   system.stateVersion = "24.05";

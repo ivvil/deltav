@@ -31,9 +31,10 @@
     # inherit (config.var) homeDirectory;
 
     packages = with pkgs; [
-      vesktop
+      # vesktop
       # mpv
       vlc
+      gcc
 
       zip
       unzip

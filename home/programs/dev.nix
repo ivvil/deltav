@@ -35,12 +35,14 @@
     deno
     typescript
     typescript-language-server
-    semgrep
+    # semgrep
     uv
     android-studio
     autotools-language-server
     dbeaver-bin
     inetutils
     wl-clipboard-x11
+    fontforge-gtk
+    xsel
   ];
 }

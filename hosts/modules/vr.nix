@@ -117,9 +117,9 @@
     #   # defaultRuntime = true; # Register as default OpenXR runtime
     # };
     wivrn = {
-      enable = true;
-      defaultRuntime = true;
-      autoStart = true;
+      # enable = true;
+      # defaultRuntime = true;
+      # autoStart = true;
     };
   };
 

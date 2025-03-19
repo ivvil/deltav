@@ -6,7 +6,7 @@
   ...
 }:
 with lib; let
-  emacsPkg = inputs.emacs-overlay.packages.${pkgs.system}.emacs-pgtk;
+  emacsPkg = inputs.emacs-overlay.packages.${pkgs.system}.emacs-git-pgtk;
   cfg = config.deltav.home.emacs;
 in {
   # nixpkgs.overlays = [ (import inputs.emacs-overlay) ];

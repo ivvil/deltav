@@ -7,8 +7,6 @@
   spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
 in {
   imports = [inputs.spicetify-nix.homeManagerModules.default];
-  nixpkgs.config.allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) ["spotify"];
   programs.spicetify = {
     enable = true;
     theme = spicePkgs.themes.text;

@@ -53,5 +53,6 @@
     nvtopPackages.full
     bsdgames
     imagemagick
+    # rustdesk
   ];
 }
