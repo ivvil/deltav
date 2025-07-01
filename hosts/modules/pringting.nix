@@ -12,7 +12,7 @@
 
     printing = {
       enable = true;
-      drivers = with pkgs; [hplipWithPlugin];
+      drivers = with pkgs; [hplip];
       listenAddresses = ["*:631"];
       allowFrom = ["all"];
       browsing = true;
@@ -25,6 +25,6 @@
 
   hardware.sane = {
     enable = true;
-    extraBackends = with pkgs; [hplipWithPlugin];
+    extraBackends = with pkgs; [hplip];
   };
 }

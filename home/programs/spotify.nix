@@ -9,7 +9,8 @@ in {
   imports = [inputs.spicetify-nix.homeManagerModules.default];
   programs.spicetify = {
     enable = true;
-    theme = spicePkgs.themes.text;
+    theme = spicePkgs.themes.matte;
+    colorScheme = "gray-dark1";
 
     enabledExtensions = with spicePkgs.extensions; [
       playlistIcons
@@ -21,7 +22,6 @@ in {
       shuffle
       groupSession
       skipStats
-      phraseToPlaylist
       wikify
       songStats
       history

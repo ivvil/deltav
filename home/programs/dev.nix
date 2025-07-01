@@ -7,12 +7,12 @@
     direnv
     ccls
     sbcl
-    godot_4-mono
-    godot_4-export-templates
+    # godot_4-mono
+    # godot_4-export-templates
     scons
     marksman
     texlive.combined.scheme-full
-    python312Packages.pygments
+    # python312Packages.pygments
     vscode
     jdk
     synology-drive-client
@@ -35,14 +35,16 @@
     deno
     typescript
     typescript-language-server
-    # semgrep
+    semgrep
     uv
     android-studio
     autotools-language-server
     dbeaver-bin
     inetutils
-    wl-clipboard-x11
     fontforge-gtk
     xsel
+    imhex
+    filezilla
+    gdb
   ];
 }

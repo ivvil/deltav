@@ -19,11 +19,15 @@
     ../../home/programs/packages.nix
     ../../home/programs/sh.nix
     ../../home/programs/spotify.nix
+    ../../home/programs/winapps.nix
   ];
 
   deltav.home.emacs = {
+    emacsclient = {
+      enable = true;
+      defaultEditor = true;
+    };
     enable = true;
-    defaultEditor = true;
   };
 
   home = {

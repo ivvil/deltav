@@ -4,12 +4,16 @@
       remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       package = pkgs.steam.override {withJava = true;};
-      # gamescopeSession.enable = true;
+      gamescopeSession.enable = true;
+    };
+
+    gamescope = {
+      enable = true;
+      capSysNice = true;
     };
 
     java.enable = true;
     gamemode.enable = true;
-    # gamescope.enable = true;
   };
 
   nixpkgs.overlays = [

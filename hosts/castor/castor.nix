@@ -20,6 +20,7 @@
     ../modules/home-manager.nix
     ../modules/httpd.nix
     ../modules/locale.nix
+    # ../modules/mumble.nix
     ../modules/networking.nix
     ../modules/nix.nix
     # ../modules/nvidia.nix
@@ -67,6 +68,10 @@
     "dotnet-core-combined"
     "dotnet-sdk-6.0.428"
     "dotnet-sdk-wrapped-6.0.428"
+  ];
+
+  hardware.graphics.extraPackages = with pkgs; [
+    intel-compute-runtime
   ];
 
   system.stateVersion = "24.05";

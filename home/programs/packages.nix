@@ -50,7 +50,7 @@
     zed-editor
     vmware-horizon-client
     mission-center
-    nvtopPackages.full
+    # nvtopPackages.full
     bsdgames
     imagemagick
     # rustdesk

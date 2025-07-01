@@ -30,5 +30,6 @@
     # podman-desktop
     dive
     pods
+    distrobox
   ];
 }

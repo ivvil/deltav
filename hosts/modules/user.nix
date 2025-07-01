@@ -10,7 +10,7 @@
     users = {
       ${config.var.username} = {
         isNormalUser = true;
-        extraGroups = ["networkmanager" "wheel" "vboxusers" "libvirtd" "kvm" "adbusers" "wireshark"];
+        extraGroups = ["networkmanager" "wheel" "vboxusers" "libvirtd" "kvm" "adbusers" "wireshark" "podman"];
         description = "Iván Villagrasa";
         # group = "$(config.var.username)";
       };

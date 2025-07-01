@@ -19,12 +19,22 @@ in {
       description = "Emacs package to use";
     };
     defaultEditor = mkEnableOption "Whether to set emacs as the default editor";
+
+    emacsclient = {
+      enable = mkEnableOption "emacsClient";
+      defaultEditor = mkEnableOption "Whether to set emacsclient as the default editor";
+      package = mkOption {
+        type = types.package;
+        default = emacsPkg;
+        description = "Emacsclient package to use";
+      };
+    };
     # extraPkgs = lib.mkOption {
     #   type =
     # };
   };
 
-  config = mkIf cfg.enable {
+  config = {
     home = {
       sessionVariables = mkIf cfg.defaultEditor {
         EDITROR = "emacs";
@@ -43,8 +53,14 @@ in {
     };
 
     programs.emacs = {
-      enable = true;
+      enable = cfg.enable;
       package = emacsPkg;
+    };
+
+    services.emacs = {
+      enable = cfg.emacsclient.enable;
+      defaultEditor = cfg.emacsclient.defaultEditor;
+      package = cfg.emacsclient.package;
     };
   };
 }

@@ -27,12 +27,15 @@
         noto-fonts
         noto-fonts-emoji
         nerd-fonts.caskaydia-cove
+        nerd-fonts.jetbrains-mono
         jetbrains-mono
         inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd
         inputs.apple-fonts.packages.${pkgs.system}.sf-mono-nerd
         inputs.apple-fonts.packages.${pkgs.system}.sf-compact-nerd
         inputs.apple-fonts.packages.${pkgs.system}.ny
         openmoji-color
+        corefonts
+        vista-fonts
       ];
 
     fontconfig = {
