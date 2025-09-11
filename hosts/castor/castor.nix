@@ -7,6 +7,7 @@
     ./hardware-configuration.nix
     ./variables.nix
 
+    ../modules/adb.nix
     ../modules/audio.nix
     ../modules/boot.nix
     ../modules/btrfs.nix
