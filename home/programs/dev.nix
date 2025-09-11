@@ -1,14 +1,14 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    jetbrains.idea-community-bin
+    # jetbrains.idea-community-bin
     cmake
     libtool
     gnumake
     direnv
     ccls
     sbcl
-    # godot_4-mono
-    # godot_4-export-templates
+    godot-mono
+    godot-export-templates-bin
     scons
     marksman
     texlive.combined.scheme-full
@@ -24,8 +24,8 @@
     clippy
     dotnet-sdk_8
     php
-    jetbrains.phpstorm
-    jetbrains.webstorm
+    # jetbrains.phpstorm
+    # jetbrains.webstorm
     blueprint-compiler
     gnome-builder
     cambalache
@@ -38,7 +38,7 @@
     semgrep
     uv
     android-studio
-    autotools-language-server
+    # autotools-language-server
     dbeaver-bin
     inetutils
     fontforge-gtk
@@ -46,5 +46,6 @@
     imhex
     filezilla
     gdb
+    asm-lsp
   ];
 }

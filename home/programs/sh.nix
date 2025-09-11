@@ -29,7 +29,7 @@ in {
       # initExtra = ''
       #   SHELL=${pkgs.zsh}/bin/zsh
       # '';
-      initExtra = lib.strings.concatLines [ "SHELL=${pkgs.zsh}/bin/zsh" "# Emacs libvterm" (builtins.readFile "${inputs.emacs-libvterm}/etc/emacs-vterm-zsh.sh")];
+      initContent = lib.strings.concatLines [ "SHELL=${pkgs.zsh}/bin/zsh" "# Emacs libvterm" (builtins.readFile "${inputs.emacs-libvterm}/etc/emacs-vterm-zsh.sh")];
     };
 
     bash = {

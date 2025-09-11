@@ -8,7 +8,7 @@
     # caprine-bin
     d-spy
     # github-desktop
-    gimp
+    # gimp
     fragments
     discord
     vesktop
@@ -48,7 +48,6 @@
     ani-cli
     lollypop
     zed-editor
-    vmware-horizon-client
     mission-center
     # nvtopPackages.full
     bsdgames
