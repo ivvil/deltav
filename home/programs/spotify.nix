@@ -30,9 +30,9 @@ in {
 
     enabledCustomApps = with spicePkgs.apps; [
       newReleases
-      reddit
-      marketplace
-      localFiles
+      # reddit
+      # marketplace
+      # localFiles
       ncsVisualizer
     ];
   };

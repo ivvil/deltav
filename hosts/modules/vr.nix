@@ -4,7 +4,7 @@
   ...
 }: {
   programs = {
-    alvr.enable = true;
+    # alvr.enable = true;
     # envision = {
     #   enable = true;
     #   package = pkgs.envision.overrideAttrs (oldAttrs: rec {

@@ -23,6 +23,8 @@
           (extraPkgs pkgs')
           ++ (with pkgs'; [
             libgdiplus
+            libcef
+            glibc
           ]);
       });
     })

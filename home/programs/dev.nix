@@ -38,7 +38,7 @@
     semgrep
     uv
     android-studio
-    # autotools-language-server
+    autotools-language-server
     dbeaver-bin
     inetutils
     fontforge-gtk
@@ -47,5 +47,7 @@
     filezilla
     gdb
     asm-lsp
+    blender-hip
+    taplo-lsp
   ];
 }
