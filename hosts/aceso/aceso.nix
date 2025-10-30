@@ -52,7 +52,7 @@
   deltav.nixos = {
     swap.enable = false;
     ollama = {
-      enable = true;
+      # enable = true;
       acceleration = "rocm";
       ui = true;
       gfxOverride = "11.0.1";

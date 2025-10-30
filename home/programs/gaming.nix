@@ -11,6 +11,6 @@ in {
     # suyu
     fusee-nano
     heroic
-    pcsx2
+    # pcsx2
   ];
 }

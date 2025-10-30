@@ -5,14 +5,16 @@ in {
   programs.git = {
     enable = true;
     lfs.enable = true;
-    extraConfig = {
+    settings = {
+      user = {
+        email = email;
+        name = name;
+      };
       color.ui = true;
       core.editor = "emacs";
       credential.helper = "store";
       github.user = name;
       push.autoSetupRemote = true;
     };
-    userEmail = email;
-    userName = name;
   };
 }

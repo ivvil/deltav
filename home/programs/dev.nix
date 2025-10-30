@@ -48,6 +48,7 @@
     gdb
     asm-lsp
     blender-hip
-    taplo-lsp
+    taplo
+    freecad
   ];
 }

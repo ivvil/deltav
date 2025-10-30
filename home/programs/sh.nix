@@ -20,7 +20,7 @@ in {
       enable = true;
       oh-my-zsh = {
         enable = true;
-        plugins = ["git" "python" "man" "podman" "docker" "docker-compose" "emacs" "ssh"];
+        plugins = ["git" "python" "man" "podman" "docker" "docker-compose" "ssh"];
         theme = "lambda";
       };
       enableCompletion = true;

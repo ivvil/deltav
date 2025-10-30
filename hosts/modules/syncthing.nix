@@ -7,6 +7,8 @@
     configDir = "/home/ivvil/.config/syncthing";
     # overrideDevices = true; # overrides any devices added or deleted through the WebUI
     # overrideFolders = true; # overrides any folders added or deleted through the WebUI
+    overrideDevices = false;
+    overrideFolders = false;
     # settings.devices = {
     #   "abas" = {id = config.sops.secrets."syncthing/devices/";};
     #   "aceso" = {id = "";};

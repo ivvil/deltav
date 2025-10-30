@@ -26,7 +26,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    gpu-viewer
+    # gpu-viewer
     rocmPackages.clr
     # rocmPackages.clang-ocl
     # rocmPackages.llvm.llvm
