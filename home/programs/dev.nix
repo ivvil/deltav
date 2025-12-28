@@ -41,9 +41,9 @@
     autotools-language-server
     dbeaver-bin
     inetutils
-    fontforge-gtk
+    # fontforge-gtk
     xsel
-    imhex
+    # imhex
     filezilla
     gdb
     asm-lsp

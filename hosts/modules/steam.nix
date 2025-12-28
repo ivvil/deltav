@@ -1,9 +1,13 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   programs = {
     steam = {
       remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-      package = pkgs.steam.override {withJava = true;};
+      package = pkgs.steam-millennium.override {withJava = true;};
       gamescopeSession.enable = true;
     };
 
@@ -16,19 +20,19 @@
     gamemode.enable = true;
   };
 
-  nixpkgs.overlays = [
-    (final: prev: {
-      steam = prev.steam.override ({extraPkgs ? pkgs': [], ...}: {
-        extraPkgs = pkgs':
-          (extraPkgs pkgs')
-          ++ (with pkgs'; [
-            libgdiplus
-            libcef
-            glibc
-          ]);
-      });
-    })
-  ];
+  nixpkgs.overlays = [inputs.millennium.overlays.default];
+
+  # nixpkgs.overlays = [
+  #   (final: prev: {
+  #     steam = prev.steam.override ({extraPkgs ? pkgs': [], ...}: {
+  #       extraPkgs = pkgs':
+  #         (extraPkgs pkgs')
+  #         ++ (with pkgs'; [
+  #           libgdiplus
+  #         ]);
+  #     });
+  #   })
+  # ];
 
   hardware.steam-hardware.enable = true;
 }

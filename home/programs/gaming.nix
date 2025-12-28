@@ -7,9 +7,9 @@ in {
     mangohud
     r2modman
     prismlauncher
-    lutris
+    # lutris
     # suyu
-    fusee-nano
+    # fusee-nano
     heroic
     # pcsx2
   ];
