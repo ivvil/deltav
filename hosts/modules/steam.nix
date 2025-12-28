@@ -2,12 +2,18 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  # milleniumPkgs = inputs.millennium.packages.${pkgs.system};
+in {
+  # nixpkgs.overlays = [inputs.millennium.overlays.default];
+  
   programs = {
     steam = {
+      enable = true;
+
       remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-      package = pkgs.steam-millennium.override {withJava = true;};
+      # package = pkgs.steam-millennium;
       gamescopeSession.enable = true;
     };
 
@@ -19,8 +25,6 @@
     java.enable = true;
     gamemode.enable = true;
   };
-
-  nixpkgs.overlays = [inputs.millennium.overlays.default];
 
   # nixpkgs.overlays = [
   #   (final: prev: {

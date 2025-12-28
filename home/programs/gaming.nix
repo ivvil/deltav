@@ -3,7 +3,7 @@ let
   suyu = inputs.suyu.packages.${pkgs.system}.suyu;
 in {
   home.packages = with pkgs; [
-    steam
+    # steam
     mangohud
     r2modman
     prismlauncher
