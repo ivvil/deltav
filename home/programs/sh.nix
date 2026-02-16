@@ -35,7 +35,7 @@ in {
     bash = {
       inherit shellAliases;
       enable = true;
-      initExtra = "SHELL=${pkgs.bash}";
+      # initExtra = "SHELL=${pkgs.bash}";
     };
 
     direnv = {

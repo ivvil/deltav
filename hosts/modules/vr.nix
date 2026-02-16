@@ -127,17 +127,17 @@
   #   STEAMVR_LH_ENABLE = "1";
   #   XRT_COMPOSITOR_COMPUTE = "1";
   # };
-  environment.systemPackages = with pkgs; [
-    wlx-overlay-s
-    stardust-xr-atmosphere
-    stardust-xr-flatland
-    stardust-xr-gravity
-    stardust-xr-kiara
-    stardust-xr-magnetar
-    stardust-xr-phobetor
-    stardust-xr-protostar
-    stardust-xr-server
-    stardust-xr-sphereland
-    # inputs.telescope.packages.${pkgs.system}.telescope
-  ];
+  # environment.systemPackages = with pkgs; [
+  #   wlx-overlay-s
+  #   stardust-xr-atmosphere
+  #   stardust-xr-flatland
+  #   stardust-xr-gravity
+  #   stardust-xr-kiara
+  #   stardust-xr-magnetar
+  #   stardust-xr-phobetor
+  #   stardust-xr-protostar
+  #   stardust-xr-server
+  #   stardust-xr-sphereland
+  #   # inputs.telescope.packages.${pkgs.system}.telescope
+  # ];
 }

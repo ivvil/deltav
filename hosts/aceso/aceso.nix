@@ -1,7 +1,4 @@
-{
-  config,
-  ...
-}: {
+{config, ...}: {
   imports = [
     ./variables.nix
     ./disks.nix
@@ -25,6 +22,7 @@
     # ../modules/nvidia.nix
     ../modules/ollama.nix
     ../modules/openssh.nix
+    # ../modules/pantheon.nix
     ../modules/peripherals.nix
     ../modules/pringting.nix
     ../modules/sh.nix
@@ -49,18 +47,24 @@
 
   boot.binfmt.emulatedSystems = ["aarch64-linux"];
 
-  deltav.nixos = {
-    swap.enable = false;
-    ollama = {
-      # enable = true;
-      acceleration = "rocm";
-      ui = true;
-      gfxOverride = "11.0.1";
+  deltav = {
+    nixos = {
+      swap.enable = false;
+      ollama = {
+        enable = true;
+        acceleration = "rocm";
+        ui = true;
+        # gfxOverride = "11.0.1";
+      };
+      nix = {
+        garbageCollection = true;
+        rocmSupport = true;
+      };
     };
-    nix = {
-      garbageCollection = true;
-      rocmSupport = true;
-    };
+    # personality.pantheon = {
+    #   enable = true;
+    #   apps = true;
+    # };
   };
 
   nixpkgs.config.permittedInsecurePackages = [

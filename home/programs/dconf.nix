@@ -11,6 +11,8 @@
     night-theme-switcher
     tiling-shell
     pano
+    user-themes
+    user-themes-x
     # paperwm
   ];
 in
@@ -122,7 +124,7 @@ in
       "org/gnome/shell" = {
         favorite-apps = [
           "org.gnome.Nautilus.desktop"
-          "firefox.desktop"
+          "zen-beta.desktop"
           "com.raggesilver.BlackBox.desktop"
           "emacs.desktop"
           "org.gnome.Lollypop.desktop"

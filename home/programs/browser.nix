@@ -17,8 +17,8 @@ in {
     firefox = {
       enable = true;
       package = pkgs.firefox-bin;
-      nativeMessagingHosts = [pkgs.web-eid-app];
-      policies.SecurityDevices.p11-kit-proxy = "${pkgs.p11-kit}/lib/p11-kit-proxy.so";
+      # nativeMessagingHosts = [pkgs.web-eid-app];
+      # policies.SecurityDevices.p11-kit-proxy = "${pkgs.p11-kit}/lib/p11-kit-proxy.so";
       profiles.default = {
         name = "Default";
         settings = {

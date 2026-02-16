@@ -41,13 +41,13 @@
     # fun
     glow
     slides
-    yabridge
-    yabridgectl
+    # yabridge
+    # yabridgectl
     wine-staging
     ascii-draw
     ani-cli
     lollypop
-    zed-editor
+    # zed-editor
     mission-center
     # nvtopPackages.full
     bsdgames

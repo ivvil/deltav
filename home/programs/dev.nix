@@ -47,8 +47,8 @@
     filezilla
     gdb
     asm-lsp
-    blender-hip
+    blender
     taplo
-    freecad
+    # freecad
   ];
 }

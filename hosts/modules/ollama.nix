@@ -12,7 +12,8 @@ in {
       type = types.listOf types.str;
       default = ["mistral-small"];
     };
-    
+
+    # FIXME Set correct package based on acceleration value    
     acceleration = mkOption {
       type = types.nullOr (
         types.enum [
@@ -37,7 +38,6 @@ in {
       ollama = {
         enable = true;
         loadModels = cfg.models;
-        acceleration = cfg.acceleration;
         rocmOverrideGfx = cfg.gfxOverride;
       };
       nextjs-ollama-llm-ui.enable = cfg.ui;

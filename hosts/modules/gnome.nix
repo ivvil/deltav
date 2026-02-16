@@ -1,8 +1,27 @@
 {
   config,
   pkgs,
+  lib,
   ...
-}: {
+}:
+with lib; let
+  # gnomePers = config.deltav.personlaity.gnome;
+  # cfg = config.deltav.gnome;
+in {
+  # options.deltav = {
+  #   personality.gnome = {
+  #     enable = mkEnableOption "Gnome configuration personality";
+  #     gdm = mkEnableOption "Gnome display manager";
+  #   };
+  #   gnome = {
+  #     copyMonitorConfig = mkOption {
+  #       type = lib.types.bool;
+  #       description = "Copy gnomes monitor config to gdm";
+  #       default = true;
+  #     };
+  #   };
+  # };
+
   environment = {
     sessionVariables = {
       NAUTILUS_EXTENSION_DIR = "${config.system.path}/lib/nautilus/extensions-4";
@@ -18,6 +37,8 @@
       nautilus-python
       wl-clipboard
       gnome-tweaks
+      greybird
+      elementary-xfce-icon-theme
     ];
   };
 

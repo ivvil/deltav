@@ -25,7 +25,6 @@ in {
       wikify
       songStats
       history
-      beautifulLyrics
     ];
 
     enabledCustomApps = with spicePkgs.apps; [

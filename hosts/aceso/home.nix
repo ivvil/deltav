@@ -22,6 +22,7 @@
     ../../home/programs/sops.nix
     ../../home/programs/spotify.nix
     ../../home/programs/video.nix
+    ../../home/programs/winapps.nix
   ];
 
   deltav.home.emacs.enable = true;
